@@ -35,7 +35,7 @@ const Navigation = ({ setStats, handleInicio, fetchPokemones,getPokemonData ,get
             setStats(false)
             setPokemones([results])
         } else {
-            alert('No se encuentra el pokemon, intenta escribiendo en minusculas')
+            alert('No se encontro el pokemon')
         }
 
 
