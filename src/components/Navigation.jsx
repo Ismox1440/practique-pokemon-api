@@ -41,9 +41,9 @@ const Navigation = ({ setStats, handleInicio, fetchPokemones,getPokemonData ,get
 
     }
 
-    const handleClick = (e) => {
-        
-        fetchPokemones(`https://pokeapi.co/api/v2/type/${e.target.id}/`, false)
+    const handleClick = async (e) => {
+        await fetchPokemones(`https://pokeapi.co/api/v2/type/${e.target.id}/`, false)
+        setStats(true)
         
     }
 
@@ -57,7 +57,7 @@ const Navigation = ({ setStats, handleInicio, fetchPokemones,getPokemonData ,get
         <nav className='navegacion'>
             <div className='header'>
                 <button onClick={handleInicio} className='titulo'>
-                    <a className='titulo-texto'>PokeApi</a>
+                    <p className='titulo-texto'>PokeApi</p>
                 </button>
                 <div className='busqueda'>
                     <form onSubmit={buscar} action="" className='busqueda-form'>
