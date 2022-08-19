@@ -563,7 +563,7 @@ body {
 
 
 
-@media (max-width: 1240px) {
+@media (max-width: 1366px) {
     .contenedor {
         grid-template-columns: repeat(3, 1fr);
     }
